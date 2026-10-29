@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Meet James & Home: thoughtful kitchen finds, useful buying guides, and a more considered way to shop. Discover the little upgrades that make everyday living better.">
+  <meta property="og:title" content="James & Home | Good Finds. Better Living.">
+  <meta property="og:description" content="Thoughtful kitchen finds for a home you love. Explore the edit, read the reviews, and find your next everyday favorite.">
+  <meta property="og:type" content="website">
+  <title>James & Home | Good Finds. Better Living.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23b75d3e'/%3E%3Cpath d='M24 9v30M9 24h30M13 13l22 22M13 35l22-22' stroke='%23fff7ec' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link rel="preconnect" href="https://blogger.googleusercontent.com">
+  <link rel="preconnect" href="https://m.media-amazon.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.pexels.com/photos/36777558/pexels-photo-36777558.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root{--paper:#f8f7f3;--ink:#29352e;--muted:#68715f;--clay:#b15839;--clay-dark:#95452d;--line:#dedfd5;--sage:#e9ece1;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:110px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;-webkit-font-smoothing:antialiased}
+    body.dialog-open{overflow:hidden}
+    button,input,select{font:inherit}
+    button,a,input,select{-webkit-tap-highlight-color:transparent}
+    button{cursor:pointer}
+    button{color:inherit}
+    button,a{touch-action:manipulation}
+    a{color:inherit;text-decoration:none}
+    button{background:none;border:0}
+    img{display:block;max-width:100%}
+    h1,h2,h3,p{margin:0}
+    h1,h2,h3{font-weight:400}
+    svg{display:block;flex-shrink:0}
+    ::selection{background:#e6c4b1;color:#28322b}
+    :focus-visible{outline:2px solid var(--clay);outline-offset:5px}
+    [hidden]{display:none!important}
+    .container{width:calc(100% - 112px);max-width:1328px;margin-inline:auto}
+    .icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:fixed;top:8px;left:16px;z-index:100;padding:12px 20px;background:var(--paper);transform:translateY(-160%)}
+    .skip-link:focus{transform:translateY(0)}
+    .eyebrow{font-size:10px;line-height:1.5;font-weight:650;letter-spacing:2.1px;text-transform:uppercase;color:var(--clay)}
+    .section-title{font-family:var(--serif);font-size:44px;line-height:1.14;letter-spacing:-1.25px}
+    .section-subtitle{margin-top:14px;color:var(--muted);font-size:14px;line-height:1.7}
+    .text-link{display:inline-flex;align-items:center;justify-content:center;gap:12px;font-size:12px;font-weight:600;line-height:1.5;white-space:nowrap;padding:7px 0;border-bottom:1px solid currentColor;transition:color .2s,gap .2s}
+    .text-link .icon{width:17px;height:17px}
+    .text-link:hover{color:var(--clay);gap:17px}
+    .button{min-height:49px;padding:14px 24px;display:inline-flex;align-items:center;justify-content:center;gap:24px;border:1px solid transparent;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:.1px;transition:background .25s,transform .25s,box-shadow .25s}
+    .button .icon{width:18px;height:18px}
+    .button:hover{transform:translateY(-2px)}
+    .button-primary{background:var(--clay);color:#fffaf4}
+    .button-primary:hover{background:var(--clay-dark);box-shadow:0 6px 18px #3e24151a}
+    .button-outline{border-color:#b7bbae;background:transparent}
+    .button-outline:hover{background:#ebede5}
+    .site-header{height:88px;position:sticky;top:0;z-index:40;background:#f8f7f3f7;border-bottom:1px solid #e3e1d9;backdrop-filter:blur(14px)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;height:100%;gap:32px}
+    .brand{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+    .brand-mark{width:29px;height:29px;color:var(--clay);stroke-width:1.6}
+    .brand-name{font-family:var(--serif);font-size:30px;line-height:1.1;letter-spacing:-1.05px}
+    .desktop-nav{display:flex;align-items:center;gap:29px;height:100%}
+    .desktop-nav a{position:relative;font-size:12px;font-weight:500;white-space:nowrap;padding-block:12px;transition:color .2s}
+    .desktop-nav a:hover,.desktop-nav a.active{color:var(--clay)}
+    .desktop-nav a.active:after{content:'';position:absolute;width:14px;height:2px;background:var(--clay);bottom:2px;left:50%;transform:translateX(-50%)}
+    .header-actions{display:flex;align-items:center;gap:10px}
+    .icon-button{width:37px;height:39px;display:inline-flex;align-items:center;justify-content:center;position:relative;border-radius:50%;transition:background .2s,color .2s}
+    .icon-button:hover{background:#eaece3;color:var(--clay)}
+    .header-actions .button{margin-left:8px;min-height:40px;padding:10px 17px;font-size:11px;gap:13px;background:var(--ink);color:var(--paper)}
+    .header-actions .button:hover{background:#435041}
+    .saved-count{position:absolute;top:1px;right:0;min-width:15px;height:15px;padding:1px 4px;border-radius:20px;background:var(--clay);color:#fff;font-size:9px;line-height:13px}
+    .menu-toggle{display:none}
+    .mobile-nav{position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:18px 24px 25px;border-bottom:1px solid var(--line);box-shadow:0 12px 15px #26362b0a}
+    .mobile-nav a{display:block;font-size:15px;padding:13px 0;border-bottom:1px solid #e8e9e1}
+    .hero{height:560px;position:relative;isolation:isolate;overflow:hidden;color:#fffaf2;background:#4d5142}
+    .hero-media{position:absolute;inset:-14px;z-index:-3;transform:translate3d(var(--pan-x,0px),var(--pan-y,0px),0);transition:transform .7s ease-out;will-change:transform}
+    .hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 56%;opacity:0;transform:scale(1.055);transition:opacity 1.4s ease,transform 11s linear;filter:saturate(.77);will-change:opacity,transform}
+    .hero-slide.active{opacity:1;transform:scale(1)}
+    .hero:before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(27,35,26,.88) 0%,rgba(29,36,27,.73) 29%,rgba(28,34,26,.23) 62%,rgba(26,31,24,.04) 100%)}
+    .hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#242d2333,transparent 36%)}
+    .hero-inner{height:100%;position:relative;display:flex;align-items:center;padding-bottom:34px}
+    .hero-copy{max-width:700px;padding-top:7px}
+    .hero-eyebrow{display:flex;align-items:center;gap:12px;color:#ede3cd;font-size:9px;letter-spacing:2.1px;margin-bottom:23px;animation:arrive .8s .05s both}
+    .hero-eyebrow:before{content:'';width:24px;height:1px;background:#dbad8e}
+    .hero h1{font-family:var(--serif);font-size:82px;line-height:1.08;letter-spacing:-3px;animation:arrive .9s .12s both}
+    .hero-tagline{font-family:var(--serif);font-size:45px;font-style:italic;color:#edddc6;letter-spacing:-.8px;line-height:1.25;margin-top:7px;animation:arrive .9s .22s both}
+    .hero-description{color:#f6f3e8ce;font-size:14px;line-height:1.9;max-width:380px;margin-top:23px;animation:arrive .9s .3s both}
+    .hero-ctas{display:flex;align-items:center;gap:27px;margin-top:29px;animation:arrive .9s .4s both}
+    .hero-ctas .button{background:var(--clay);min-width:178px}
+    .hero-ctas .button:hover{background:#a95135}
+    .hero-ctas .text-link{border:0;font-weight:500;font-size:12px;color:#f4f2e8}
+    .slideshow-controls{position:absolute;left:0;bottom:26px;display:flex;align-items:center;gap:16px}
+    .slide-dots{display:flex;align-items:center;gap:7px}
+    .slide-dot{width:30px;height:26px;padding:11px 0;position:relative}
+    .slide-dot:after{content:'';display:block;height:2px;background:#ffffff4d;transition:background .3s}
+    .slide-dot[aria-current="true"]:after{background:#faf4e5}
+    .slide-counter{font-size:10px;letter-spacing:1.5px;color:#ffffffa8;margin-left:2px}
+    .slide-counter span{color:#fff7e9}
+    .slide-control{width:27px;height:27px;color:#ffffffc4;display:grid;place-items:center;border:1px solid #ffffff40;border-radius:50%}
+    .slide-control .icon{width:11px;height:11px;stroke-width:1.9}
+    .slide-control:hover{background:#ffffff1a}
+    .hero-corner{position:absolute;right:0;bottom:29px;display:flex;align-items:center;gap:14px}
+    .hero-corner .icon-button{border:1px solid #ffffff60;color:#fff;width:34px;height:34px}
+    .hero-corner .icon-button:hover{background:#ffffff20}
+    .affiliate-note{display:flex;align-items:center;justify-content:center;gap:9px;min-height:45px;padding:12px 24px;background:#efeee7;color:#626b57;font-size:10px;line-height:1.7;text-align:center;border-bottom:1px solid #e3e4da}
+    .affiliate-note .icon{width:13px;height:13px;flex-shrink:0}
+    .affiliate-note button{text-decoration:underline;text-underline-offset:3px;color:#535e4e;padding:0;margin-left:5px;font-size:inherit}
+    .edit-section{padding:72px 0 78px}
+    .section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:31px}
+    .section-heading .eyebrow{margin-bottom:13px}
+    .section-heading>.text-link{margin-bottom:4px}
+    .browse-toolbar{display:flex;align-items:stretch;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line);margin-bottom:28px}
+    .category-filters{display:flex;align-items:stretch;gap:27px;overflow-x:auto;scrollbar-width:none}
+    .category-filters::-webkit-scrollbar{display:none}
+    .category-button{font-size:11px;font-weight:500;padding:17px 0;white-space:nowrap;position:relative;color:#65715d}
+    .category-button[aria-pressed="true"]{color:var(--ink);font-weight:650}
+    .category-button[aria-pressed="true"]:after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--clay)}
+    .category-button:hover{color:var(--clay)}
+    .category-count{font-size:9px;vertical-align:super;margin-left:3px;color:#929588}
+    .sort-control{display:flex;align-items:center;gap:8px;white-space:nowrap;padding-left:14px;font-size:10px;color:var(--muted)}
+    .sort-control select{appearance:none;border:0;color:var(--ink);background:transparent;max-width:142px;cursor:pointer;padding:12px 20px 12px 0;font-size:11px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' viewBox='0 0 24 24' stroke='%23575f51' stroke-width='1.7'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-position:right center;background-repeat:no-repeat}
+    .search-context{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:0 0 24px;font-size:13px;color:var(--muted)}
+    .search-context button{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--clay)}
+    .search-context .icon{width:15px;height:15px}
+    .product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:39px 25px}
+    .product-card{min-width:0;animation:arrive .5s both}
+    .product-card:nth-child(2){animation-delay:.05s}.product-card:nth-child(3){animation-delay:.1s}.product-card:nth-child(4){animation-delay:.15s}
+    .product-media{position:relative;background:#eeeee7;aspect-ratio:1.08;perspective:900px;isolation:isolate;overflow:hidden;border-radius:2px}
+    .product-card:nth-child(4n+2) .product-media{background:#efebe4}.product-card:nth-child(4n+3) .product-media{background:#eaece4}.product-card:nth-child(4n+4) .product-media{background:#efece6}
+    .product-preview{display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;padding:24px;transform-style:preserve-3d;overflow:visible}
+    .product-shot{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transform:rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateZ(14px) scale(var(--product-scale,.93));transition:transform .4s ease,filter .4s ease;will-change:transform;filter:drop-shadow(0 9px 6px #1f2e2512)}
+    .product-media:hover .product-shot,.product-media:focus-within .product-shot{--product-scale:1;filter:drop-shadow(0 15px 9px #1f2e2521)}
+    .product-preview.lifestyle{padding:0}.lifestyle .product-shot{mix-blend-mode:normal;object-fit:cover;--product-scale:1;filter:none}.product-media:hover .lifestyle .product-shot{--product-scale:1.055;filter:none}
+    .product-badge{position:absolute;top:16px;left:16px;z-index:2;font-size:8px;font-weight:650;letter-spacing:1.15px;background:#f7f8f0;color:#59634f;padding:6px 8px;pointer-events:none}
+    .save-button{position:absolute;top:12px;right:12px;z-index:3;width:31px;height:31px;display:grid;place-items:center;border-radius:50%;background:#fafbf5e6;color:#65705d;transition:background .2s,color .2s,transform .2s}
+    .save-button .icon{width:16px;height:16px;stroke-width:1.5}
+    .save-button:hover{transform:scale(1.08);background:#fffaf2;color:var(--clay)}
+    .save-button[aria-pressed="true"]{color:var(--clay)}
+    .save-button[aria-pressed="true"] .icon{fill:#b75d3e20}
+    .quick-look{position:absolute;bottom:13px;left:50%;transform:translate(-50%,8px);display:flex;align-items:center;gap:9px;white-space:nowrap;background:#f9f8f1ed;padding:8px 12px;opacity:0;transition:opacity .25s,transform .25s;border-radius:2px;font-size:9px;font-weight:600;letter-spacing:.4px;color:var(--ink)}
+    .quick-look .icon{width:12px;height:12px}
+    .product-media:hover .quick-look,.product-media:focus-within .quick-look{opacity:1;transform:translate(-50%,0)}
+    .product-category{font-size:8px;font-weight:600;letter-spacing:1.5px;color:#68745d;text-transform:uppercase;margin-top:19px}
+    .product-title{font-family:var(--serif);font-size:22px;letter-spacing:-.35px;line-height:1.25;margin-top:7px;min-height:28px}
+    .product-title button{padding:0;text-align:left;font:inherit;transition:color .2s}
+    .product-title button:hover{color:var(--clay)}
+    .product-description{font-size:11px;line-height:1.8;color:var(--muted);margin-top:8px;min-height:40px;max-width:255px}
+    .product-actions{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:18px}
+    .review-link{display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:600;padding:3px 0}
+    .review-link .icon{width:14px;height:14px;transition:transform .2s}
+    .review-link:hover{color:var(--clay)}.review-link:hover .icon{transform:translateX(3px)}
+    .amazon-link{display:inline-flex;align-items:center;gap:5px;font-size:9px;color:#65715d;padding:3px 0}
+    .amazon-link:hover{color:var(--clay)}.amazon-link .icon{width:11px;height:11px}
+    .collection-bottom{text-align:center;margin-top:40px}
+    .collection-bottom .button{font-size:11px;min-height:44px;padding:11px 23px}
+    .results-count{font-size:10px;color:#68745d;margin-top:15px;line-height:1.6}
+    .empty-state{grid-column:1/-1;text-align:center;padding:55px 20px;background:#eeefe7}
+    .empty-state h3{font-family:var(--serif);font-size:30px}.empty-state p{font-size:13px;line-height:1.8;color:var(--muted);margin:12px auto 22px;max-width:300px}
+    .spotlight{background:var(--sage);overflow:hidden}
+    .spotlight-inner{display:grid;grid-template-columns:1fr 1fr;min-height:417px;align-items:center;gap:70px}
+    .spotlight-art{position:relative;display:grid;place-items:center;height:390px;perspective:1100px}
+    .spotlight-art:before{content:'';position:absolute;width:280px;height:24px;background:#3c492b12;filter:blur(16px);border-radius:50%;bottom:39px}
+    .spotlight-art img{width:390px;max-height:330px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 25px 15px #3b452b1a);transform:rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(0);transition:transform .6s;will-change:transform}
+    .spotlight-copy{max-width:440px;padding:48px 0}
+    .spotlight-copy .eyebrow{color:#6b765c;margin-bottom:16px}
+    .spotlight-copy .section-title{font-size:46px;line-height:1.12}
+    .spotlight-copy p:not(.eyebrow){font-size:13px;line-height:1.9;color:#5c684f;margin-top:19px;max-width:350px}
+    .spotlight-copy .text-link{margin-top:24px;font-size:11px}
+    .guides-section{padding:79px 0 82px}
+    .guides-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:29px}
+    .guide{min-width:0}
+    .guide-image-button{width:100%;padding:0;display:block;overflow:hidden;background:#e9e6dd;position:relative}
+    .guide-image{width:100%;height:285px;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1);filter:saturate(.74)}
+    .guide-image-button:hover .guide-image{transform:scale(1.045)}
+    .guide-meta{font-size:9px;text-transform:uppercase;letter-spacing:1.7px;color:#67745d;margin-top:21px}
+    .guide-title-line{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:9px}
+    .guide-title-line h3{font-family:var(--serif);font-size:29px;letter-spacing:-.6px}
+    .guide-title-line h3 button{text-align:left;padding:0;font:inherit}
+    .guide-title-line h3 button:hover{color:var(--clay)}
+    .guide-title-line>.icon-button{border:1px solid #d9ddcf;width:34px;height:34px}
+    .guide-description{font-size:12px;line-height:1.8;color:var(--muted);margin-top:9px;max-width:470px}
+    .story-section{background:#efece3}
+    .story-inner{display:grid;grid-template-columns:1fr 1fr;min-height:386px;align-items:stretch}
+    .story-copy{padding:59px 70px 52px 0;align-self:center}
+    .story-copy .eyebrow{margin-bottom:18px}
+    .story-copy .section-title{font-size:43px;max-width:430px}
+    .story-copy>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#636c58;margin-top:20px;max-width:385px}
+    .story-signoff{display:flex;align-items:center;gap:20px;margin-top:27px}
+    .signature{font-family:var(--serif);font-style:italic;font-size:32px;letter-spacing:-1.1px;color:var(--clay)}
+    .story-signoff .text-link{font-size:10px;border-color:#a6aa9a}
+    .story-photo{width:100%;height:100%;min-height:386px;max-height:450px;object-fit:cover;filter:saturate(.7)}
+    .site-footer{background:#2b3a31;color:#eceee3;padding:58px 0 0}
+    .footer-top{display:grid;grid-template-columns:1.7fr .7fr .9fr;gap:55px;padding-bottom:43px}
+    .footer-brand .brand-name{font-size:35px;letter-spacing:-1.1px}.footer-brand .brand-mark{color:#dba084;width:31px;height:31px}
+    .footer-brand p{font-size:12px;color:#b5bfaf;line-height:1.8;margin-top:16px;max-width:270px}
+    .footer-heading{font-size:9px;letter-spacing:1.7px;font-weight:600;text-transform:uppercase;color:#c6cfbf;margin:5px 0 17px}
+    .footer-links{display:flex;align-items:flex-start;flex-direction:column;gap:12px;font-size:11px;color:#bac5b4}
+    .footer-links a,.footer-links button{padding:0;font-size:inherit;transition:color .2s;text-align:left}
+    .footer-links a:hover,.footer-links button:hover{color:#fff5df}
+    .footer-bottom{border-top:1px solid #54604d;padding:20px 0 21px;display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:9px;line-height:1.6;color:#9eac97}
+    .footer-bottom p:last-child{max-width:540px;text-align:right}
+    dialog{color:var(--ink);background:var(--paper);border:0;padding:0;border-radius:5px;box-shadow:0 25px 100px #17231b33;max-height:90svh;max-width:calc(100% - 36px);margin:auto;overscroll-behavior:contain}
+    dialog::backdrop{background:#17231bad;backdrop-filter:blur(4px)}
+    dialog[open]{animation:dialog-arrive .25s ease both}
+    .dialog-topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 25px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--paper);z-index:5}
+    .dialog-topbar .eyebrow{color:#79816e;font-size:9px;letter-spacing:1.5px}
+    .dialog-topbar .icon-button{width:30px;height:30px}
+    .product-dialog{width:940px}
+    .review-layout{display:grid;grid-template-columns:.85fr 1.15fr;align-items:start}
+    .review-visual{position:sticky;top:65px;min-height:430px;background:#eeefe7;display:flex;align-items:center;justify-content:center;padding:42px 25px}
+    .review-visual img{width:100%;max-height:380px;object-fit:contain;mix-blend-mode:multiply}
+    .review-visual.lifestyle img{mix-blend-mode:normal;max-height:440px;object-fit:cover}
+    .review-copy{padding:34px 34px 36px}
+    .review-copy h2{font-family:var(--serif);font-size:37px;line-height:1.15;letter-spacing:-.9px;margin:11px 0 17px}
+    .review-intro{font-size:13px;line-height:1.85;color:#6c7565}
+    .review-specs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:18px 0;margin:23px 0;border-block:1px solid var(--line)}
+    .review-specs dt{font-size:8px;text-transform:uppercase;letter-spacing:1.1px;color:#858b7b;margin-bottom:6px}
+    .review-specs dd{font-size:11px;font-weight:600;margin:0;line-height:1.5}
+    .review-subheading{font-family:var(--serif);font-size:23px;margin:22px 0 13px}
+    .review-features{list-style:none;padding:0;margin:0;display:grid;gap:13px}
+    .review-features li{display:flex;gap:10px;font-size:12px;line-height:1.75;color:#6b7463}
+    .review-features .icon{color:#7b8c69;width:17px;height:17px;margin-top:3px}
+    .review-consideration{font-size:11px;line-height:1.8;color:#777c6d;margin:21px 0;padding-left:13px;border-left:2px solid #c7cfbc}
+    .review-consideration strong{font-weight:600;color:#58634e}
+    .review-cta-row{display:flex;gap:10px;margin-top:24px}
+    .review-cta-row .button-primary{flex:1;padding-inline:15px;gap:12px}
+    .review-save{width:49px;border:1px solid #bdc4b2;display:grid;place-items:center;border-radius:3px}
+    .review-save[aria-pressed="true"]{color:var(--clay);background:#f0e3d8}
+    .review-save[aria-pressed="true"] .icon{fill:#b75d3e20}
+    .review-disclosure{font-size:9px;line-height:1.8;color:#838978;margin-top:12px}
+    .dialog-feedback{font-size:11px;line-height:1.7;color:#5e754c}
+    .dialog-feedback:not(:empty){margin:12px 0}
+    .review-source{display:inline-flex;align-items:center;gap:7px;font-size:10px;color:#707a64;border-bottom:1px solid #c5cbbd;padding-bottom:3px;margin-top:18px}.review-source .icon{width:12px;height:12px}
+    .link-notice{font-size:11px;line-height:1.8;color:#95653a;background:#f2e9da;padding:14px;margin-top:20px}
+    .search-dialog{width:650px}
+    .search-dialog .dialog-topbar h2,.saved-dialog .dialog-topbar h2{font-family:var(--serif);font-size:29px;letter-spacing:-.5px}
+    .search-body{padding:25px 28px 30px}
+    .search-input-wrap{display:flex;gap:12px;align-items:center;border-bottom:1px solid #9ba68f;padding:9px 0 16px}
+    .search-input-wrap .icon{width:22px;height:22px;color:#6c775e}
+    .search-input-wrap input{width:100%;min-width:0;border:0;outline:none;background:transparent;font-size:16px;padding:3px 0;color:var(--ink)}
+    .search-input-wrap:focus-within{border-color:var(--clay)}
+    .search-hint{font-size:10px;color:#858c7b;margin:13px 0 23px}
+    .search-results{display:grid;max-height:390px;overflow-y:auto}
+    .search-result{display:flex;align-items:center;gap:18px;padding:13px 0;width:100%;text-align:left;border-bottom:1px solid var(--line)}
+    .search-result img{width:60px;height:60px;object-fit:contain;background:#ebede3;mix-blend-mode:multiply;border-radius:2px}
+    .search-result-text{flex:1;min-width:0}.search-result-text strong{display:block;font-size:14px;font-weight:500;line-height:1.5}.search-result-text span{font-size:10px;color:var(--muted);display:block;margin-top:4px}
+    .search-result>.icon{width:16px;height:16px;color:#8a957d}.search-result:hover .search-result-text strong{color:var(--clay)}
+    .search-all{width:100%;margin-top:24px}
+    .search-empty{padding:24px 0;font-size:13px;line-height:1.8;color:var(--muted)}
+    .saved-dialog{position:fixed;inset:0 0 0 auto;margin:0;width:430px;max-width:100%;height:100svh;max-height:100svh;border-radius:0;animation-name:drawer-arrive!important}
+    .saved-body{padding:25px}
+    .saved-intro{font-size:12px;line-height:1.8;color:#7a826e;margin-bottom:21px}
+    .saved-item{position:relative;display:grid;grid-template-columns:75px 1fr;gap:17px;border-bottom:1px solid var(--line);padding:21px 0}
+    .saved-item img{height:85px;width:75px;object-fit:contain;background:#eeefe7;mix-blend-mode:multiply}.saved-item h3{font-family:var(--serif);font-size:21px;line-height:1.3;padding-right:25px}
+    .saved-item .remove-saved{position:absolute;top:22px;right:0;width:24px;height:24px}.saved-item .remove-saved .icon{width:14px;height:14px}
+    .saved-item .review-link{margin-top:13px}
+    .clear-saved{font-size:11px;color:var(--clay);text-decoration:underline;text-underline-offset:4px;padding:0;margin-top:28px}
+    .saved-empty{text-align:center;padding:65px 0}
+    .saved-empty>.icon{width:34px;height:34px;margin:0 auto 22px;stroke-width:1;color:#929c84}.saved-empty h3{font-family:var(--serif);font-size:30px}.saved-empty p{font-size:12px;line-height:1.9;color:var(--muted);max-width:255px;margin:16px auto 25px}
+    .article-dialog{width:710px}
+    .article-content{padding:35px 44px 43px}
+    .article-content h2{font-family:var(--serif);font-size:40px;line-height:1.18;letter-spacing:-1px;margin-bottom:20px}
+    .article-content>p,.article-content li{font-size:13px;line-height:1.9;color:#6d7663}
+    .article-content>p+p{margin-top:15px}
+    .article-content h3{font-family:var(--serif);font-size:25px;line-height:1.3;margin:27px 0 12px}
+    .article-content ul{padding-left:20px;list-style:disc;margin:12px 0}.article-content li+li{margin-top:10px}
+    .article-content strong{font-weight:600;color:#4c5c42}
+    .article-content .button{margin-top:25px}
+    .article-note{border-top:1px solid var(--line);padding-top:18px;margin-top:28px!important;font-size:10px!important}
+    .article-content .inline-link{color:var(--clay);text-decoration:underline;text-underline-offset:3px}
+    .toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,25px);z-index:100;background:#2b3a31;color:#f5f4e9;padding:13px 20px;box-shadow:0 5px 25px #18261b26;border:1px solid #8c98763d;border-radius:4px;font-size:12px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;max-width:calc(100% - 32px);width:max-content}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    .reveal.prepared{opacity:0;transform:translateY(23px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+    .reveal.prepared.in-view{opacity:1;transform:translateY(0)}
+    @keyframes arrive{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes dialog-arrive{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes drawer-arrive{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+    @media(min-width:1600px){.hero{height:640px}.hero h1{font-size:94px}.hero-tagline{font-size:51px}.hero-description{font-size:16px;max-width:420px}.product-title{font-size:24px}.product-description{font-size:12px}}
+    @media(max-width:1190px){.container{width:calc(100% - 72px)}.header-inner{gap:20px}.desktop-nav{gap:21px}.desktop-nav a{font-size:11px}.header-actions{gap:4px}.header-actions .button{display:none}.hero h1{font-size:77px}.category-filters{gap:23px}.sort-control>span{display:none}.product-grid{gap:35px 20px}.product-title{font-size:21px}.spotlight-inner{gap:45px}.section-title{font-size:41px}.guide-title-line h3{font-size:27px}}
+    @media(max-width:900px){.container{width:calc(100% - 56px)}.site-header{height:78px}.desktop-nav{gap:20px}.desktop-nav a:nth-child(2){display:none}.brand-name{font-size:27px}.brand-mark{width:25px;height:25px}.hero{height:540px}.hero h1{font-size:72px}.hero-tagline{font-size:41px}.hero:before{background:linear-gradient(90deg,#1b2319db,#1d241bbe 35%,#1c221a45 75%,#1a1f1826)}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 23px}.product-media{aspect-ratio:1.2}.product-preview{padding:26px}.product-title{font-size:25px}.product-description{font-size:12px;max-width:100%;min-height:0}.product-category{font-size:9px}.product-actions{margin-top:16px}.review-link{font-size:11px}.amazon-link{font-size:10px}.browse-toolbar{display:block;position:relative}.category-filters{gap:26px}.sort-control{display:none}.section-title{font-size:39px}.spotlight-inner{gap:30px;min-height:375px}.spotlight-art{height:350px}.spotlight-copy .section-title{font-size:38px}.spotlight-copy{padding:40px 0}.spotlight-art img{max-height:280px}.guide-image{height:245px}.guide-title-line h3{font-size:25px}.guide-description{font-size:11px}.story-copy{padding-right:35px}.story-copy .section-title{font-size:37px}.story-copy>p:not(.eyebrow){font-size:12px}.footer-top{gap:35px;grid-template-columns:1.3fr .7fr 1fr}.footer-brand .brand-name{font-size:29px}.footer-brand .brand-mark{width:25px;height:25px}.review-copy{padding:26px}.review-copy h2{font-size:32px}.review-layout{grid-template-columns:.8fr 1.2fr}}
+    @media(max-width:700px){html{scroll-padding-top:90px}.container{width:calc(100% - 40px)}.site-header{height:72px}.header-inner{gap:8px}.brand{gap:7px}.brand-name{font-size:25px;letter-spacing:-.9px}.brand-mark{width:24px;height:24px}.desktop-nav{display:none}.header-actions{gap:1px}.icon-button{width:34px;height:36px}.header-actions .icon{width:18px;height:18px}.menu-toggle{display:inline-flex}.hero{height:565px}.hero-media{inset:-8px}.hero-slide{object-position:65% center}.hero:before{background:linear-gradient(90deg,#1b2319dc,#1b2319ad 65%,#1b231970)}.hero-inner{align-items:center;padding-bottom:41px}.hero-copy{padding-top:0;max-width:100%}.hero-eyebrow{font-size:8px;letter-spacing:1.65px;gap:9px;margin-bottom:25px}.hero-eyebrow:before{width:19px}.hero h1{font-size:clamp(42px,8.2vw,58px);letter-spacing:-1.6px;line-height:1.14}.hero-tagline{font-size:clamp(29px,5.7vw,38px);letter-spacing:-.7px;margin-top:12px}.hero-description{font-size:13px;line-height:1.9;max-width:305px;margin-top:25px}.hero-ctas{gap:23px;margin-top:30px}.hero-ctas .button{min-width:160px;min-height:47px;font-size:11px;gap:18px;padding:13px 18px}.hero-ctas .text-link{font-size:11px;gap:7px}.slideshow-controls{bottom:26px;gap:12px}.hero-corner{bottom:23px;gap:9px}.hero-corner .icon-button{width:31px;height:31px}.hero-corner .icon{width:15px;height:15px}.affiliate-note{padding:12px 20px;gap:8px;font-size:9px;align-items:flex-start;text-align:left}.affiliate-note .icon{margin-top:2px;min-width:13px}.affiliate-note button{margin-left:2px;white-space:nowrap}.edit-section{padding:48px 0 51px}.section-heading{margin-bottom:22px;gap:14px;align-items:flex-start;position:relative}.section-heading .eyebrow{font-size:9px;letter-spacing:1.8px;margin-bottom:12px}.section-title{font-size:34px;letter-spacing:-.9px;max-width:350px}.section-subtitle{font-size:12px;margin-top:13px;max-width:290px}.section-heading>.text-link{font-size:10px;position:absolute;right:0;top:0;border:0;gap:6px;padding:0;margin:0}.section-heading>.text-link .icon{width:13px;height:13px}.category-filters{gap:23px;overflow-x:auto}.category-button{font-size:10px;padding:16px 0}.browse-toolbar{margin-bottom:22px}.product-grid{gap:28px 15px}.product-media{aspect-ratio:.91}.product-preview{padding:17px 11px}.product-badge{top:12px;left:10px;font-size:6.5px;padding:5px 6px;letter-spacing:.7px;max-width:calc(100% - 49px)}.save-button{top:9px;right:8px;width:27px;height:27px}.save-button .icon{width:14px;height:14px}.product-category{font-size:7px;letter-spacing:1px;margin-top:15px}.product-title{font-size:20px;line-height:1.25;margin-top:6px;letter-spacing:-.25px}.product-description{font-size:10px;line-height:1.8;margin-top:7px;min-height:36px}.product-actions{margin-top:12px;flex-wrap:wrap;gap:5px 12px}.review-link{font-size:9px;gap:5px}.review-link .icon{width:12px;height:12px}.amazon-link{font-size:8px}.amazon-link .icon{width:10px;height:10px}.quick-look{font-size:8px;gap:6px;padding:6px 9px;bottom:10px}.collection-bottom{margin-top:32px}.collection-bottom .button{font-size:10px}.results-count{font-size:9px}.spotlight-inner{grid-template-columns:1fr;gap:0;min-height:0;padding-bottom:39px}.spotlight-art{height:285px}.spotlight-art img{width:315px;max-height:248px}.spotlight-art:before{bottom:22px;width:200px;height:20px}.spotlight-copy{padding:0 10px;text-align:center;max-width:100%;margin-top:-4px}.spotlight-copy .eyebrow{font-size:9px;margin-bottom:12px}.spotlight-copy .section-title{font-size:37px;margin:auto;max-width:100%}.spotlight-copy p:not(.eyebrow){font-size:12px;max-width:310px;margin:17px auto 0}.spotlight-copy .text-link{margin-top:20px;font-size:11px}.guides-section{padding:48px 0 52px}.guides-grid{grid-template-columns:1fr;gap:35px}.guide-image{height:240px}.guide-meta{font-size:8px;margin-top:17px}.guide-title-line{margin-top:8px;gap:12px}.guide-title-line h3{font-size:27px;line-height:1.2}.guide-title-line>.icon-button{width:30px;height:30px}.guide-description{font-size:12px}.story-inner{grid-template-columns:1fr}.story-copy{padding:43px 0 36px}.story-copy .eyebrow{font-size:9px;margin-bottom:13px}.story-copy .section-title{font-size:37px;max-width:370px}.story-copy>p:not(.eyebrow){font-size:12px;margin-top:17px;max-width:100%}.story-signoff{margin-top:21px}.story-photo{min-height:0;height:260px;margin-bottom:30px;object-position:center 60%}.site-footer{padding-top:40px}.footer-top{grid-template-columns:1fr 1fr;gap:31px 26px;padding-bottom:33px}.footer-brand{grid-column:1/-1}.footer-brand .brand-name{font-size:32px}.footer-brand .brand-mark{width:28px;height:28px}.footer-brand p{font-size:11px;max-width:280px;margin-top:13px}.footer-heading{font-size:8px;letter-spacing:1.5px;margin-bottom:16px}.footer-links{font-size:10px;gap:12px}.footer-bottom{display:block;padding-block:18px;font-size:8px}.footer-bottom p:last-child{text-align:left;margin-top:10px;max-width:400px}.product-dialog{max-height:94svh}.dialog-topbar{padding:13px 18px}.review-layout{grid-template-columns:1fr}.review-visual{position:static;min-height:0;height:240px;padding:23px 32px}.review-visual img{max-height:200px}.review-visual.lifestyle img{max-height:215px;width:auto}.review-copy{padding:24px}.review-copy h2{font-size:33px}.review-intro{font-size:12px}.review-specs{margin:20px 0;padding-block:16px}.review-specs dd{font-size:10px}.review-features li{font-size:11px}.review-subheading{font-size:23px}.review-disclosure{font-size:9px}.article-content{padding:27px 24px 32px}.article-content h2{font-size:33px}.article-content>p,.article-content li{font-size:12px}.article-content h3{font-size:24px}.search-dialog .dialog-topbar h2,.saved-dialog .dialog-topbar h2{font-size:27px}.search-body{padding:20px}.search-input-wrap input{font-size:14px}.search-result{gap:12px}.search-result-text strong{font-size:12px}.search-result-text span{font-size:9px}.search-result img{width:51px;height:51px}.search-all{font-size:11px}.toast{font-size:11px;padding:12px 16px;bottom:18px}.search-context{font-size:11px;align-items:flex-start}.search-context button{font-size:10px;white-space:nowrap}}
+    @media(max-width:370px){.container{width:calc(100% - 32px)}.brand-name{font-size:22px}.brand-mark{width:21px;height:21px}.header-actions .icon-button{width:31px}.hero h1{font-size:41px}.hero-tagline{font-size:29px}.hero-ctas{gap:17px}.product-title{font-size:18px}.product-description{font-size:9px}.section-title{font-size:31px}.section-heading>.text-link{font-size:9px}.product-badge{font-size:6px}.footer-top{gap:30px 15px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.hero-slide,.hero-media,.product-shot,.spotlight-art img{transform:none!important;will-change:auto}.reveal.prepared{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-spark" viewBox="0 0 32 32"><path d="M16 3v26M3 16h26M6.8 6.8l18.4 18.4M6.8 25.2 25.2 6.8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.7" cy="10.7" r="6.7"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.5 4.8a5.1 5.1 0 0 0-7.2 0L12 6.1l-1.3-1.3a5.1 5.1 0 0 0-7.2 7.2L12 20.5l8.5-8.5a5.1 5.1 0 0 0 0-7.2Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="James and Home, back to top">
+        <svg class="icon brand-mark" aria-hidden="true"><use href="#i-spark"/></svg>
+        <span class="brand-name">james & home</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="active" href="#the-edit">The Edit</a>
+        <a href="#the-edit" data-category-nav="all">Kitchen & Cooking</a>
+        <a href="#guides">Buying Guides</a>
+        <a href="#our-story">Our Story</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="search-trigger" aria-label="Search kitchen finds" title="Search the edit"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></button>
+        <button class="icon-button" id="saved-trigger" aria-label="Your saved finds" title="Your saved finds"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span id="saved-count" class="saved-count" hidden>0</span></button>
+        <a class="button" href="#the-edit">Shop the edit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#the-edit">The Edit</a><a href="#the-edit" data-category-nav="all">Kitchen & Cooking</a><a href="#guides">Buying Guides</a><a href="#our-story">Our Story</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-label="Welcome to James and Home">
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-slide active" src="https://images.pexels.com/photos/36777558/pexels-photo-36777558.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" srcset="https://images.pexels.com/photos/36777558/pexels-photo-36777558.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200 1200w, https://images.pexels.com/photos/36777558/pexels-photo-36777558.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1254&w=2400 2400w" sizes="100vw" width="2400" height="1254" alt="" fetchpriority="high">
+        <img class="hero-slide" src="https://images.pexels.com/photos/8141955/pexels-photo-8141955.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" srcset="https://images.pexels.com/photos/8141955/pexels-photo-8141955.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200 1200w, https://images.pexels.com/photos/8141955/pexels-photo-8141955.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1254&w=2400 2400w" sizes="100vw" width="2400" height="1254" alt="" decoding="async">
+        <img class="hero-slide" src="https://images.pexels.com/photos/36777538/pexels-photo-36777538.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" srcset="https://images.pexels.com/photos/36777538/pexels-photo-36777538.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200 1200w, https://images.pexels.com/photos/36777538/pexels-photo-36777538.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1254&w=2400 2400w" sizes="100vw" width="2400" height="1254" alt="" decoding="async">
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">Thoughtful finds for everyday living</p>
+          <h1>James & Home.</h1>
+          <p class="hero-tagline">Make room for better.</p>
+          <p class="hero-description">Clever kitchen finds. Considered choices. Discover the little things that make a house feel more like home.</p>
+          <div class="hero-ctas">
+            <a href="#the-edit" class="button button-primary">Explore the edit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#our-story" class="text-link">A little about us <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </div>
+        </div>
+        <div class="slideshow-controls" role="group" aria-label="Kitchen inspiration slideshow. Images change every 10 seconds.">
+          <div class="slide-dots">
+            <button class="slide-dot" data-slide="0" aria-label="Show bright Scandinavian kitchen" aria-current="true"></button>
+            <button class="slide-dot" data-slide="1" aria-label="Show warm wooden kitchen" aria-current="false"></button>
+            <button class="slide-dot" data-slide="2" aria-label="Show natural oak kitchen" aria-current="false"></button>
+          </div>
+          <p class="slide-counter"><span id="slide-number">01</span> / 03</p>
+          <button class="slide-control" id="slide-pause" aria-label="Pause slideshow" title="Pause slideshow"><svg class="icon" aria-hidden="true"><use href="#i-pause"/></svg></button>
+        </div>
+        <div class="hero-corner">
+          <button class="icon-button" id="slide-previous" aria-label="Previous kitchen image"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+          <button class="icon-button" id="slide-next" aria-label="Next kitchen image"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="affiliate-note">
+      <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+      <p>A little transparency: As an Amazon Associate, I earn from qualifying purchases, at no extra cost to you. <button data-article="affiliate">Our promise</button></p>
+    </div>
+
+    <section class="container edit-section" id="the-edit" aria-labelledby="edit-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">The James edit</p><h2 class="section-title" id="edit-title">Worth a place in your home.</h2><p class="section-subtitle">Good things for your kitchen. Without the endless scrolling.</p></div>
+        <button class="text-link" id="view-all-top">View all finds <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+      <div class="browse-toolbar">
+        <div class="category-filters" role="group" aria-label="Filter products by category">
+          <button class="category-button" data-category="all" aria-pressed="true">All finds <span class="category-count">11</span></button>
+          <button class="category-button" data-category="cookers" aria-pressed="false">Smart cookers</button>
+          <button class="category-button" data-category="air-fryers" aria-pressed="false">Air fryers</button>
+          <button class="category-button" data-category="cooktops" aria-pressed="false">Induction cooktops</button>
+          <button class="category-button" data-category="essentials" aria-pressed="false">Everyday essentials</button>
+        </div>
+        <label class="sort-control"><span>Sort:</span><select id="product-sort" aria-label="Sort products"><option value="curated">Curated for you</option><option value="az">Name: A to Z</option><option value="za">Name: Z to A</option></select></label>
+      </div>
+      <div class="search-context" id="search-context" hidden><span id="search-context-label"></span><button id="clear-search">Clear search <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+      <div class="product-grid" id="product-grid" aria-label="Curated kitchen products"></div>
+      <noscript><p>Please enable JavaScript to browse the edit, or <a href="https://homevibegadgets.blogspot.com/" target="_blank" rel="noopener noreferrer">read all the original reviews on Home Vibe Gadgets</a>.</p></noscript>
+      <div class="collection-bottom">
+        <button class="button button-outline" id="load-more">Discover all 11 finds <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <p class="results-count" id="results-count" role="status" aria-live="polite">Showing 4 of 11 thoughtful finds. Current prices on Amazon.</p>
+      </div>
+    </section>
+
+    <section class="spotlight" aria-labelledby="spotlight-title">
+      <div class="container spotlight-inner">
+        <button class="spotlight-art" data-product="rice-cooker" aria-label="Read the Auto-Lift Glass Rice Cooker review">
+          <img id="spotlight-image" data-product-image="rice-cooker" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWjZa6HcUjo0LulemEtIW2dnU5vAJPCSX82e_9WJleslYaeK9KbHnuKp7LYpkMRzJLG0JBjFa12QjvoO2vdr-25DcmC1u7ozVlGH2IgebeH7IGppFfJXMrnoWokuU6JR57pncrQjgEkpsx2qI6m7FYJUzfm718Zpt5vEby1hUtHNEu8LIuo9QlZRMhCjCm/s1500/61vTmw6-YsL._AC_SL1500_.jpg" width="1500" height="1189" alt="Glass rice cooker with an automatic lifting stainless steel basket" loading="lazy" decoding="async">
+        </button>
+        <div class="spotlight-copy reveal">
+          <p class="eyebrow">A closer look / The kitchen spotlight</p>
+          <h2 class="section-title" id="spotlight-title">Good cooking.<br>A clearer view.</h2>
+          <p>A glass body, an auto-lift basket, and a fresh take on your everyday rice cooker. Sometimes, the little details make all the difference.</p>
+          <button class="text-link" data-product="rice-cooker">Meet the glass rice cooker <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container guides-section" id="guides" aria-labelledby="guides-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">A little helpful reading</p><h2 class="section-title" id="guides-title">Less guesswork. Better choices.</h2><p class="section-subtitle">A little know-how goes a long way in a well-loved kitchen.</p></div></div>
+      <div class="guides-grid">
+        <article class="guide reveal">
+          <button class="guide-image-button" data-article="cookers" aria-label="Read the guide: Find your everyday cooking companion"><img class="guide-image" src="https://images.pexels.com/photos/3847514/pexels-photo-3847514.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" width="1200" height="627" alt="Considered kitchen essentials, a kettle, and wooden cutting boards on a countertop" loading="lazy" decoding="async"></button>
+          <p class="guide-meta">The cooking companion guide</p>
+          <div class="guide-title-line"><h3><button data-article="cookers">One kitchen. The right cooker.</button></h3><button class="icon-button" data-article="cookers" aria-label="Read the cooking companion guide"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></button></div>
+          <p class="guide-description">Pressure cooker, air fryer, or a bit of both? Find the fit for the way you actually cook.</p>
+        </article>
+        <article class="guide reveal">
+          <button class="guide-image-button" data-article="small-kitchen" aria-label="Read the guide: Small kitchen, thoughtful possibilities"><img class="guide-image" src="https://images.pexels.com/photos/8176590/pexels-photo-8176590.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" width="1200" height="627" alt="Natural wooden cutting boards and everyday cooking tools in a warm kitchen" loading="lazy" decoding="async"></button>
+          <p class="guide-meta">The small-space edit</p>
+          <div class="guide-title-line"><h3><button data-article="small-kitchen">Small kitchen. Lovely possibilities.</button></h3><button class="icon-button" data-article="small-kitchen" aria-label="Read the small kitchen guide"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></button></div>
+          <p class="guide-description">Make a little more room with clever essentials that do more and tuck away neatly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section" id="our-story" aria-labelledby="story-title">
+      <div class="container story-inner">
+        <div class="story-copy reveal"><p class="eyebrow">A note from James</p><h2 class="section-title" id="story-title">A home you love.<br>One good find at a time.</h2><p>Welcome to James & Home, a fresh chapter for Home Vibe Gadgets. A place for useful discoveries, clearer choices, and the everyday things that quietly make life better. Less searching. More enjoying your home.</p><div class="story-signoff"><span class="signature">James</span><button class="text-link" data-article="approach">The thinking behind the edit <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div></div>
+        <img class="story-photo" src="https://images.pexels.com/photos/3851070/pexels-photo-3851070.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" width="1200" height="627" alt="Fresh vegetables and useful utensils ready for a quiet afternoon of home cooking" loading="lazy" decoding="async">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="brand" href="#" aria-label="James and Home, back to top"><svg class="icon brand-mark" aria-hidden="true"><use href="#i-spark"/></svg><span class="brand-name">james & home</span></a><p>Thoughtful finds. A little inspiration.<br>For a home that feels more like you.</p></div>
+        <div><h2 class="footer-heading">Make yourself at home</h2><nav class="footer-links" aria-label="Footer navigation"><a href="#the-edit">Explore the edit</a><a href="#guides">The buying guides</a><a href="#our-story">A little about James</a><button id="footer-saved">Your saved finds</button></nav></div>
+        <div><h2 class="footer-heading">Good to know</h2><div class="footer-links"><button data-article="affiliate">Affiliate disclosure</button><button data-article="approach">Our editorial approach</button><button data-article="privacy">Privacy & your saved finds</button><a href="https://homevibegadgets.blogspot.com/" target="_blank" rel="noopener noreferrer">Visit the original blog</a></div></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="copyright-year">2026</span> James & Home. Good finds. Better living.</p><p>As an Amazon Associate, I earn from qualifying purchases. Amazon and its logo are trademarks of Amazon.com, Inc. or its affiliates.</p></div>
+    </div>
+  </footer>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="review-title"><div class="dialog-topbar"><span class="eyebrow">The James & Home review</span><button class="icon-button" data-close aria-label="Close product review"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div id="product-dialog-content"></div></dialog>
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title"><div class="dialog-topbar"><h2 id="search-title">Find your next favorite.</h2><button class="icon-button" data-close aria-label="Close search"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="search-body"><form id="search-form"><div class="search-input-wrap"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><label class="sr-only" for="search-input">Search products and brands</label><input id="search-input" type="search" placeholder="Try 'rice cooker' or 'small kitchen'..." autocomplete="off" maxlength="100"></div><p class="search-hint" id="search-hint" role="status">A few favorites to get you started.</p><div class="search-results" id="search-results"></div><button class="button button-primary search-all" id="search-all" type="submit">Explore all finds <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></form></div></dialog>
+  <dialog class="saved-dialog" id="saved-dialog" aria-labelledby="saved-title"><div class="dialog-topbar"><h2 id="saved-title">Your little collection.</h2><button class="icon-button" data-close aria-label="Close saved finds"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="saved-body"><p class="saved-intro">The things that caught your eye, all in one place. Saved on this browser, just for you.</p><p class="dialog-feedback" id="saved-feedback" role="status" aria-live="polite"></p><div id="saved-list"></div></div></dialog>
+  <dialog class="article-dialog" id="article-dialog" aria-labelledby="article-title"><div class="dialog-topbar"><span class="eyebrow" id="article-eyebrow">A little helpful reading</span><button class="icon-button" data-close aria-label="Close article"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="article-content" id="article-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    'use strict';
+    const icon = (name, extra = '') => `<svg class="icon ${extra}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
+    const blog = 'https://homevibegadgets.blogspot.com/';
+    const bloggerImage = (path) => 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/' + path;
+    const products = [
+      {
+        id:'rice-cooker',name:'Auto-Lift Glass Rice Cooker',category:'Smart cooking',categories:['cookers'],badge:"THE JAMES PICK",keywords:'low sugar low carb rice smart cooker steam steamer hotpot glass 3l',
+        description:'A clearer view of dinner. A clever take on everyday rice.',
+        image:bloggerImage('AVvXsEjWjZa6HcUjo0LulemEtIW2dnU5vAJPCSX82e_9WJleslYaeK9KbHnuKp7LYpkMRzJLG0JBjFa12QjvoO2vdr-25DcmC1u7ozVlGH2IgebeH7IGppFfJXMrnoWokuU6JR57pncrQjgEkpsx2qI6m7FYJUzfm718Zpt5vEby1hUtHNEu8LIuo9QlZRMhCjCm/s1000/61vTmw6-YsL._AC_SL1500_.jpg'),
+        fallbackImage:'https://m.media-amazon.com/images/I/41nW7VqCMaL._AC_SL1000_.jpg',
+        amazon:'https://amzn.to/4BvvYdF',source:blog+'2026/10/low-sugar-rice-cooker-auto-lift-basket-review.html',
+        overview:'This glass rice cooker brings a visible cooking chamber and an automatic lifting basket to the everyday countertop. The original review describes a boil-then-steam approach that separates rice from its cooking water, alongside steaming, boiling, and hotpot functions.',
+        specs:[['Capacity','3 liters'],['Body','Borosilicate glass'],['Signature feature','Auto-lift basket']],
+        features:['An automatic stainless steel basket lifts the rice away from the cooking water.','A transparent glass body lets you follow the cooking process without lifting the lid.','The original article lists quick and slow rice modes, plus steaming, boiling, and hotpot uses.'],
+        consideration:'The "low sugar" and carbohydrate-reduction descriptions are product claims, not a nutritional guarantee or medical advice. Verify the current model and instructions, and choose rice portions appropriate for your dietary needs.'
+      },
+      {
+        id:'chefman',name:'Chefman TurboFry 9 Qt',category:'Air fryers',categories:['air-fryers'],keywords:'chefman air fryer turbo fry family large 9 qt 7 in 1',
+        description:'A little less fuss. A lot more room for family favorites.',
+        image:bloggerImage('AVvXsEh1n7Vfa9mvI1VfIPw8Zc1z0s90REN1t49TA41JoR0Xs0vtSaXn8o-Vqkrs-GLOdqxln9vqi0pH9_fKstPD9v1oJHaQp_iO7WSmekpphB7ln-xI1y87gnfodxZ4fBrhlYDu20-qxRWzqUxtT9QF_M_4yKGdYJy4AaJ1H6ZshWmmDhmiDDM34gBfBowVUYxw/s1000/81TNVH2j5FL._AC_SL1500_.jpg'),
+        amazon:'https://amzn.to/4hsezcx',source:blog+'2026/09/blog-post.html',
+        overview:'The Chefman TurboFry combines a generous 9-quart basket with seven cooking functions and a viewing window. It is worth a look for households that regularly cook larger portions and want to check on food without repeatedly opening the basket.',
+        specs:[['Capacity','9 quarts'],['Cooking modes','7 functions'],['Listed maximum','450 F']],
+        features:['A viewing window makes it easier to keep an eye on your food.','The listed functions include air fry, broil, dehydrate, convection bake, reheat, keep warm, and cooking frozen foods.','A large basket is useful for family portions, although food still needs space for air circulation.'],
+        consideration:'A 9-quart fryer needs a meaningful amount of counter and ventilation space. Check the dimensions, recommended clearances, electrical requirements, and current model details before ordering.'
+      },
+      {
+        id:'salbree',name:'Salbree Steamer Basket',category:'Everyday essentials',categories:['essentials'],keywords:'salbree steam steamer stainless steel basket instant pot 6qt accessories vegetables small kitchen',
+        description:'The thoughtful little extra your pressure cooker will love.',
+        image:'https://m.media-amazon.com/images/I/51E2RN6S9oL._AC_SL1000_.jpg',
+        fallbackImage:bloggerImage('AVvXsEiOZ98T7W0f6QX7Fo3U4UpKlx7WZF61Jui-gTAUR2_LDgEV65Xcc67sDF1NpsBiiNfCWDoc3E13Rj5_NTyv11U18UFoT1mr3K52cKzVO3-ppLl1F41Nj6BLMec9r7unQbfVgG8U13NRa_bCX5hyPYgwMDGLN6LhVYd3GHIDJb3jf8BXQKaxijLvQ3wcjCJN/s848/1791892714064.jpg'),
+        amazon:'https://amzn.to/4hU5ARt',source:blog+'2026/10/salbree-steamer-basket-instant-pot-review.html',
+        overview:'Sometimes the most useful kitchen upgrade is an accessory, not another appliance. The Salbree basket pairs stainless steel mesh with attached silicone-covered handles, making it a practical option for lifting steamed ingredients from a compatible cooker.',
+        specs:[['Reviewed size','6-quart fit'],['Material','304 stainless steel'],['Detail','Silicone handles']],
+        features:['Interlocking, attached handles offer a convenient lifting point.','A reinforced stainless steel basket supports ingredients while allowing steam to circulate.','The original review describes dishwasher-safe construction and compatibility with several 6-quart Instant Pot models.'],
+        consideration:'Measure your cooker and check the exact basket size before buying. Steam and the basket can still be hot; follow the cooker instructions and use appropriate heat protection.'
+      },
+      {
+        id:'rosewill',name:'Rosewill Induction Cooker',category:'Induction cooktops',categories:['cooktops'],keywords:'rosewill portable induction cooker burner pot 1800 watt 1800w 3.5 qt small kitchen',
+        description:'Your extra helping hand, with a matching pot to get started.',
+        image:'https://m.media-amazon.com/images/I/41RynQlFACL._AC_SL1000_.jpg',
+        fallbackImage:bloggerImage('AVvXsEiLcMLAFgaWI_9GXXiL1DgMYuxDzvTNH0cK9XUEi1vDnsSo4G0ctM3N0d1wJo20EqanmH9TZgNt2yXEwvBB0XN-_-A73Hb_RnTluAdcMBkECnGTC4RJH67Da7xk7FgtXjLCBpiGo3UrC4v6kjbm9gxApOj_mCd59o_Dr_wn4NxG-SrKIlSQkYItErl64BIn/s848/1790856707355.jpg'),
+        amazon:'https://amzn.to/3W1G3hR',source:blog+'2026/10/rosewill-induction-cooker-1800-watt-review.html',
+        overview:'A portable induction burner can be a useful second cooking station or a flexible option for a smaller kitchen. This Rosewill set is described with an 1800-watt cooktop and a matching 3.5-quart stainless steel pot, so you can start with compatible cookware.',
+        specs:[['Listed power','1800 watts'],['Programs','5 presets'],['Included pot','3.5 quarts']],
+        features:['Five listed presets cover warm milk, soup, stir-fry, fry, and hotpot.','The reviewed bundle includes a 10-inch, 3.5-quart stainless steel pot.','A single portable burner offers flexibility without a permanent full-size range installation.'],
+        consideration:'Induction requires compatible magnetic cookware. Check the outlet rating, manufacturer clearances, pot dimensions, and whether the current listing includes the pot.'
+      },
+      {
+        id:'nuwave',name:'Nuwave Duet Multi-Cooker',category:'Multi-cookers',categories:['cookers','air-fryers'],keywords:'nuwave duet pressure cooker air fryer combination combo digital probe 450 in 1',
+        description:'Pressure cook, then crisp. One versatile cooking companion.',
+        image:'https://m.media-amazon.com/images/I/41O2dSfDM7L._AC_SL1000_.jpg',
+        fallbackImage:bloggerImage('AVvXsEjKKGKCySRWkdo0yB-t3b8tErPq6BE_FK45KWZnM0p4vfhKRudw9cbuOumCYFsoVtPWKIwQR2Onfgw9u5djQqWrS-R2SIhfyYRRObBr5WqOlfLHhxVFP8DCntI_kmN0T_D5DFMtiWIMgWhe8aKPiBElZwNAg_bog8yisNNojXtKrghPjqEpYT_RmH-qVzk9/s848/1790857012804.jpg'),
+        amazon:'https://amzn.to/4iZnZ1r',source:blog+'2026/10/nuwave-duet-electric-pressure-cooker-air-fryer-review.html',
+        overview:'The Nuwave Duet brings pressure cooking and air frying together. The reviewed version includes interchangeable lids and a temperature probe, making it a candidate for cooks who want to try different cooking methods without buying a separate appliance for each one.',
+        specs:[['Style','Pressure + air fry'],['Reviewed lids','3 removable lids'],['Included feature','Temperature probe']],
+        features:['Combination cooking lets you pressure cook first, then finish with an air-frying step for texture.','The original article describes three removable lids and a wide range of cooking presets.','A digital temperature probe is listed with the reviewed version to help monitor food temperature.'],
+        consideration:'Multi-function does not always mean a smaller storage footprint. Allow space for the appliance and spare lids, and check which accessories and programs are included with the exact model.'
+      },
+      {
+        id:'collapsible',name:'Fold-Away Steel Colander',category:'Everyday essentials',categories:['essentials'],keywords:'rvxesaw collapsible foldable colander stainless steel silicone strainer pasta vegetable small kitchen space saving 2.7qt',
+        description:'All the useful draining space. Less of the cupboard space.',
+        image:'https://m.media-amazon.com/images/I/41OeYiH6SFL._AC_SL1000_.jpg',
+        fallbackImage:bloggerImage('AVvXsEhluJxCz92iwYPAVn-6LoHarRmurvm-ydee3C80i8McwulS7WTbkIFUGEBdBxHYjIeJVKtGrd4KKiOtTDywr04HhWVQigvAFsPKela0ROgjcVuIf9eeqrcvrN_GgVTDfG8GuwCBZAE5Bh0wPlcOJpoQRDoEioXlQjjIDpOJ33dI_WuSazGn8rCOcMWH4afH/s1024/file_00000000415082068698b3cd0f065c10.png'),
+        amazon:'https://amzn.to/4hLSENC',source:blog+'2026/10/collapsible-stainless-steel-silicone-colander-review.html',
+        overview:'This RVxesaw colander combines stainless steel with a flexible silicone section so it can fold down for storage. The 2.7-quart size is a useful middle ground for everyday produce, pasta, and prep work in kitchens where cupboard space is precious.',
+        specs:[['Capacity','2.7 quarts'],['Construction','Steel + silicone'],['Storage','Collapsible']],
+        features:['A foldable body takes up less storage space than a full-height rigid colander.','Dense drainage holes and a raised, non-slip base are described in the source review.','The stainless steel and silicone combination is designed for everyday rinsing and draining.'],
+        consideration:'Check the open and collapsed dimensions, temperature limits, and care instructions. Keep hands clear of escaping steam when draining hot food.'
+      },
+      {
+        id:'ranein',name:'Ranein Dual Induction Cooktop',category:'Induction cooktops',categories:['cooktops'],keywords:'ranein 12 inch 2 burner dual induction cooktop 1800w 120v small kitchen apartment rv',
+        description:'Two cooking zones. A more flexible little kitchen.',
+        image:'https://m.media-amazon.com/images/I/41fIYnoMtEL._AC_SL1000_.jpg',
+        amazon:'https://amzn.to/4yIZT09',source:blog+'2026/10/ranein-12-inch-2-burner-induction-cooktop-review.html',
+        overview:'The Ranein 12-inch cooktop offers two induction zones in a narrow format. The source article describes a 120-volt, 1800-watt unit with a smooth glass surface, making it worth considering when a full-width cooktop is not the right fit.',
+        specs:[['Width','12 inches'],['Cooking zones','2 burners'],['Listed supply','120 V / 1800 W']],
+        features:['Two zones let you work on more than one part of a meal.','The listed safety features include a child lock, overheat protection, and pan detection.','A flat glass cooking surface offers a straightforward wipe-down once cool.'],
+        consideration:'Confirm built-in installation requirements, ventilation, approved use, and cookware sizes in the manufacturer manual. Two zones may share the total power; do not assume each provides 1800 watts simultaneously.'
+      },
+      {
+        id:'kingbull',name:'KINGBULL 8 Qt Multi-Cooker',category:'Smart cooking',categories:['cookers'],keywords:'kingbull pressure cooker electric 14 in 1 8qt family large batch meal prep',
+        description:'A generous helping of possibility for the family table.',
+        image:bloggerImage('AVvXsEjAL47u5TfR-6HJJcZtt8t5p-pZlczsiIUxLELwN14IvLB6AZ1SsIs_6RkMD-SbZpSnhW9uGMentv4pWoU8sZ5orjzL3CWRcUbeJxli50Bez40vVgxzdJrG7CcqcO7j0IuHK_0W-eP-2BWtXIdxGRABWTmirXp6PQ36iI9ow9RPG-WauPHcBhItGbSODPNd/s1000/71J9s7L480L._AC_SL1254_.jpg'),
+        amazon:'https://amzn.to/4yqlUkc',source:blog+'2026/09/kingbull-14-in-1-electric-pressure-cooker-8qt-review.html',
+        overview:'With an 8-quart capacity and a knob-and-button interface, the KINGBULL is aimed at family portions and batch cooking. The source review describes a 14-in-1 appliance with a clear LCD display and a range of everyday cooking programs.',
+        specs:[['Capacity','8 quarts'],['Listed functions','14-in-1'],['Controls','LCD + dial']],
+        features:['A larger vessel suits soups, stews, beans, and planned leftovers.','The LCD shows cooking settings, time, and pressure information.','Listed programs include pressure cook, slow cook, rice, steam, saute, yogurt, and keep warm.'],
+        consideration:'Check minimum liquid requirements and maximum fill lines; usable capacity is below the full vessel volume. Do not use a general pressure cooker for pressure canning unless authoritative food-safety guidance and the exact model support that use.'
+      },
+      {
+        id:'changbert',name:'ChangBERT Induction Cooktop',category:'Induction cooktops',categories:['cooktops'],keywords:'changbert chang bert portable induction cooktop commercial burner 1800w countertop enhanced small kitchen',
+        description:'A focused, flexible burner for your everyday repertoire.',
+        image:'https://m.media-amazon.com/images/I/41wWkDXkMEL._AC_SL1000_.jpg',
+        fallbackImage:bloggerImage('AVvXsEgIzj_xo4xuqRc3vM6fMiX1-Vqq72kpkNLs8yyV818MoAfLMh4iBA7JJNX3bO3QGm9npybZm4b_K7_x2sU58so594GGurV5loBTBUMHKst_z4m_Cr4-mOzYsZ9O6MfiLIVjc9RWp35boJP6UxQpMZs9vAfbwCbcb-NqRfTUcB7F-mQ6L89AHp4xQgwWSdGa/s848/1790856350481.jpg'),
+        amazon:'https://amzn.to/4hvIdNW',source:blog+'2026/10/changbert-portable-induction-cooktop-review.html',
+        overview:'The enhanced ChangBERT induction cooktop is a portable single-burner option described with an 1800-watt maximum setting and adjustable heat control. It is a potential fit for cooks who want a dedicated extra burner rather than a multi-function countertop appliance.',
+        specs:[['Listed power','1800 watts'],['Cooking zones','Single burner'],['Format','Portable induction']],
+        features:['A one-touch maximum-power setting is listed in the original review.','The source describes a larger heating coil and adjustable temperature settings.','Its portable form offers flexibility when planning a supplementary cooking station.'],
+        consideration:'Verify the exact version, electrical rating, cookware compatibility, noise expectations, and any certification claims on the current listing and manufacturer documentation.'
+      },
+      {
+        id:'yedi',name:'Yedi 9-in-1 Pressure Cooker',category:'Smart cooking',categories:['cookers'],keywords:'yedi pressure cooker 9 in 1 electric instant 6qt six quart accessory kit',
+        description:'A versatile everyday cooker, with helpful extras included.',
+        image:bloggerImage('AVvXsEg1JnBcIXIGDoBM2WvYIzeJOQ2A97kxSSsrRiNJx5QPNEmAUCPHNfY_T3MVXQZXarE12BqubCFiwhw566165rQB_rtKKi-u2Xd8qj6QFnWSg-WdmV2poRY04POF4IA09UJmJFwCE3xHvwZcu6pCMyaatuy2usAqY3dW5ozG7IcC3VgqGRf4FxAtkZgRLHgK/s1000/71M9vfXEMSL._AC_SL1444_.jpg'),
+        amazon:'https://amzn.to/4hR4A1C',source:blog+'2026/09/yedi-9-in-1-electric-pressure-cooker-review.html',
+        overview:'The Yedi 9-in-1 is a 6-quart electric pressure cooker that also covers several familiar kitchen jobs. The original review highlights its touch programs and accessory bundle, including a glass lid and egg racks.',
+        specs:[['Capacity','6 quarts'],['Listed functions','9-in-1'],['Programs','15 touch presets']],
+        features:['Pressure cooking, slow cooking, sauteing, steaming, rice, yogurt, and warming are among the listed functions.','Fifteen touch programs offer starting points for common dishes and ingredients.','The reviewed accessory kit includes a tempered glass lid and two egg racks.'],
+        consideration:'Accessory bundles, warranties, and return terms can change by seller. Confirm the current inclusions and instructions, and use only the appropriate lid for pressure cooking.'
+      },
+      {
+        id:'colander-trio',name:'XUNWKONGG Colander Trio',category:'Everyday essentials',categories:['essentials'],keywords:'xunwkongg 3 piece three stainless steel colander strainer set pasta vegetable kitchen essentials',
+        description:'Three useful sizes for the little jobs and the big dinners.',
+        image:bloggerImage('AVvXsEiWlDtaS0iVRxVG-l6S3Un74dSOIrgJYCah1mHLO7GTdGjO2zDQyRgRr5NpTzhAFfzH_NVXg0xFOYw9rFcl930px85chmZAtzywXJncgWdCnk-Hadc7WvG0KjlzVGC-PaM09FhwXX2x1UGTFFJgrOPe_InxGRwZKypGxkrsTSotbTvH6iNhvX5ysTZ-ERgf/s1024/file_000000006e048211a4ac61d9cf0e6cc3.png'),lifestyle:true,
+        amazon:null,source:blog+'2026/10/xunwkongg-3-piece-stainless-steel-colander-set-review.html',
+        overview:'This three-piece stainless steel set offers a choice of sizes for rinsing fruit, washing vegetables, or draining a larger batch of pasta. The original article lists 7-, 9-, and 11-inch colanders with side handles and raised bases.',
+        specs:[['Set includes','3 colanders'],['Listed sizes','7, 9 & 11 inches'],['Material','Stainless steel']],
+        features:['Three sizes let you choose a bowl that suits the amount of food you are preparing.','Side handles provide a lifting point for moving the colander.','Raised bases allow room for water to drain underneath the bowls.'],
+        consideration:'Check the actual dimensions, handle clearance, and care instructions in the matching product listing.',
+        linkNotice:'A quick heads-up: the original article currently links to the collapsible colander, not this three-piece set. To avoid sending you to the wrong item, we are sharing the original review instead of an Amazon purchase link.'
+      }
+    ];
+
+    const articles = {
+      cookers: {eyebrow:'The cooking companion guide',title:'One kitchen. The right cooker.',body:`
+        <p>The right appliance is the one that suits the meals you make most often, not the one with the longest list of settings. Start with your usual weeknight dinner, then work backwards.</p>
+        <h3>For soups, stews, and planned leftovers</h3><p>A pressure cooker is worth considering when beans, braised dishes, rice, and batch cooking are regulars on the menu. The <button class="inline-link" data-product="yedi">6-quart Yedi</button> covers a broad range of everyday jobs; the <button class="inline-link" data-product="kingbull">8-quart KINGBULL</button> offers a larger vessel. Remember that safe working capacity is lower than the full pot volume.</p>
+        <h3>For crisp edges and easy checking</h3><p>If your favorites are roasted vegetables, reheated leftovers, and crisp snacks, look at an air fryer. The <button class="inline-link" data-product="chefman">Chefman TurboFry 9 Qt</button> has a viewing window and a generous basket. Check its footprint, and leave enough space around it for ventilation.</p>
+        <h3>For cooks who want both</h3><p>The <button class="inline-link" data-product="nuwave">Nuwave Duet</button> combines pressure cooking and air frying. That can be helpful, but extra lids still need a home. Compare the entire storage footprint, not just the base.</p>
+        <h3>Before you choose</h3><ul><li><strong>Measure your space.</strong> Include lid-opening height, nearby cupboards, and the manufacturer's ventilation clearance.</li><li><strong>Choose your capacity.</strong> Consider portions and leftovers, not just how many people live at home.</li><li><strong>Check the details.</strong> Confirm the exact model, power requirements, accessories, cleaning instructions, and current price.</li></ul>
+        <button class="button button-primary" data-browse="cookers">Explore smart cookers ${icon('arrow')}</button><p class="article-note">An editorial guide based on the linked Home Vibe Gadgets articles, not a new hands-on test. Follow the manufacturer's safety instructions for your exact model.</p>`},
+      'small-kitchen': {eyebrow:'The small-space edit',title:'Small kitchen. Lovely possibilities.',body:`
+        <p>A small kitchen does not need more things. It needs things that suit the space. Think about what earns a permanent place on the counter and what can disappear into a drawer when dinner is done.</p>
+        <h3>Let the everyday tools fold away</h3><p>A rigid colander can occupy an entire shelf. The <button class="inline-link" data-product="collapsible">fold-away stainless steel colander</button> uses a flexible silicone section to reduce its storage height. Check its collapsed dimensions against your cupboard before choosing it.</p>
+        <h3>Make the appliance you own more useful</h3><p>If you already use a compatible pressure cooker, a <button class="inline-link" data-product="salbree">Salbree steamer basket</button> may be a more useful addition than a separate steamer. Match the basket size to your cooker rather than assuming every 6-quart insert will fit.</p>
+        <h3>Choose a cooking station that fits</h3><p>A single portable induction burner, such as the <button class="inline-link" data-product="rosewill">Rosewill set</button>, can offer flexibility. A narrow dual-zone unit, such as the <button class="inline-link" data-product="ranein">Ranein 12-inch cooktop</button>, requires a closer look at installation, ventilation, and power-sharing requirements. Always check the manual and use approved cookware.</p>
+        <h3>The one-in, one-purpose check</h3><p>Before adding something new, ask: Will I use this regularly? Can something I own already do this job? Where will it live? Three simple questions can protect a surprising amount of counter space.</p><button class="button button-primary" data-browse="essentials">Find the useful little things ${icon('arrow')}</button><p class="article-note">Dimensions, suitability, and installation requirements vary by product. Verify the current model information before ordering.</p>`},
+      affiliate: {eyebrow:'A little transparency',title:'Good finds. Clear intentions.',body:`
+        <p><strong>As an Amazon Associate, I earn from qualifying purchases.</strong> If you follow an Amazon affiliate link and make a qualifying purchase, we may receive a small commission at no extra cost to you.</p><h3>What that means for you</h3><p>You shop directly with Amazon, not James & Home. The current price, availability, delivery details, returns, and payment terms are shown on Amazon. We do not take payments or handle orders here.</p><h3>About the edit</h3><p>These product summaries are adapted from the original Home Vibe Gadgets articles. They are intended to make the information easier to browse, not to imply new hands-on testing, independently measured performance, or a medical endorsement.</p><p>Product details and included accessories can change. Check the precise model, seller, specifications, and safety instructions before buying. We deliberately do not show unverified live prices or star ratings.</p><h3>Something worth flagging</h3><p>The original three-piece XUNWKONGG colander article uses an Amazon link for a different, collapsible colander. That product therefore links to its original review until a matching affiliate destination can be confirmed.</p><p class="article-note">Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>`},
+      approach: {eyebrow:'The thinking behind the edit',title:'Fewer distractions. More useful details.',body:`
+        <p>James & Home is a fresh presentation of the kitchen discoveries originally shared on Home Vibe Gadgets. The aim is simple: make those finds easier to understand, compare, and revisit.</p><h3>Useful before impressive</h3><p>The edit focuses on practical questions: what does this do, where might it fit, and what should you check before buying? Big program counts are less useful than knowing whether a cooker suits the way you prepare dinner.</p><h3>Keep the original source close</h3><p>Every product review includes a link to the original article. Product details on this site are drawn from those articles; these redesigned summaries are not new laboratory results or hands-on tests.</p><h3>Leave room for the important caveats</h3><p>Capacity, installation, compatibility, storage, and safety deserve a place alongside the highlights. Marketing descriptions are not guarantees, and health-related product names do not establish nutritional outcomes.</p><h3>Make choosing feel a little calmer</h3><p>No invented ratings, countdown deals, or unverified price claims. Just a considered place to explore, save your favorites, and continue to the retailer when you are ready.</p><button class="button button-primary" data-browse="all">Make yourself at home ${icon('arrow')}</button>`},
+      privacy: {eyebrow:'Privacy & your saved finds',title:'Your little collection stays with you.',body:`
+        <p>This single-page website does not require an account, collect email addresses, process orders, or include an analytics tracker.</p><h3>Saved finds</h3><p>When you select a heart, the product's identifier is stored in your browser's local storage under <strong>james-home-saved-v1</strong>. It stays on this browser and is not sent to James & Home. You can remove individual finds or choose "Clear my saved finds" in your collection. Clearing your browser data also removes the collection.</p><p>If browser storage is unavailable, favorites remain available only for the current page visit. They are not synchronized across devices.</p><h3>Search</h3><p>Search runs locally against this page's product collection. Queries are not sent to a search service and are not stored after the page is closed.</p><h3>External services and links</h3><p>This page loads fonts, styling, and images from Google Fonts, jsDelivr, Pexels, Blogger, and Amazon image servers. Those services receive normal connection information, such as your IP address, when content loads. Their own privacy terms apply.</p><p>Amazon affiliate links and links to the original blog take you to external websites, which may use their own cookies and tracking. Review their privacy policies before using those services.</p>`}
+    };
+
+    const grid = document.getElementById('product-grid');
+    const productDialog = document.getElementById('product-dialog');
+    const searchDialog = document.getElementById('search-dialog');
+    const savedDialog = document.getElementById('saved-dialog');
+    const articleDialog = document.getElementById('article-dialog');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const state = {category:'all',query:'',sort:'curated',expanded:false};
+    const storageKey = 'james-home-saved-v1';
+    let saved = new Set();
+    let storageAvailable = true;
+    let toastTimer;
+    let returnTo;
+
+    try {
+      const stored = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      if (Array.isArray(stored)) saved = new Set(stored.filter(id => products.some(product => product.id === id)));
+    } catch (_) { storageAvailable = false; }
+
+    function showToast(message) {
+      const dialogFeedback = document.querySelector('dialog[open] .dialog-feedback');
+      if (dialogFeedback) { dialogFeedback.textContent = message; return; }
+      const toast = document.getElementById('toast');
+      clearTimeout(toastTimer);
+      toast.textContent = message;
+      toast.classList.add('show');
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2800);
+    }
+
+    function matchesSearch(product, query) {
+      const normalize = value => value.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+      const text = normalize(`${product.name} ${product.category} ${product.description} ${product.keywords}`);
+      const terms = normalize(query).split(/\s+/).filter(Boolean);
+      if (query.trim() && !terms.length) return false;
+      return terms.every(word => text.includes(word));
+    }
+
+    function getFilteredProducts() {
+      let list = products.filter(product => (state.category === 'all' || product.categories.includes(state.category)) && matchesSearch(product, state.query));
+      if (state.sort === 'az') list.sort((a,b) => a.name.localeCompare(b.name));
+      if (state.sort === 'za') list.sort((a,b) => b.name.localeCompare(a.name));
+      return list;
+    }
+
+    function productCard(product) {
+      const isSaved = saved.has(product.id);
+      return `<article class="product-card" data-card="${product.id}">
+        <div class="product-media">
+          <button class="product-preview ${product.lifestyle ? 'lifestyle' : ''}" data-product="${product.id}" aria-label="Read the ${product.name} review">
+            <img class="product-shot" src="${product.image}" alt="${product.name}" width="600" height="600" loading="lazy" decoding="async" data-product-image="${product.id}">
+            <span class="quick-look">Take a closer look ${icon('plus')}</span>
+          </button>
+          ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}
+          <button class="save-button" data-save="${product.id}" aria-label="${isSaved ? 'Remove' : 'Save'} ${product.name}${isSaved ? ' from' : ' to'} your finds" aria-pressed="${isSaved}">${icon('heart')}</button>
+        </div>
+        <p class="product-category">${product.category}</p>
+        <h3 class="product-title"><button data-product="${product.id}">${product.name}</button></h3>
+        <p class="product-description">${product.description}</p>
+        <div class="product-actions"><button class="review-link" data-product="${product.id}">Read the review ${icon('arrow')}</button>
+          ${product.amazon ? `<a class="amazon-link" href="${product.amazon}" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="See ${product.name} on Amazon, opens in a new tab">Amazon ${icon('external')}</a>` : `<a class="amazon-link" href="${product.source}" target="_blank" rel="noopener noreferrer">Original review ${icon('external')}</a>`}
+        </div>
+      </article>`;
+    }
+
+    function renderProducts() {
+      const filtered = getFilteredProducts();
+      const visible = state.expanded ? filtered : filtered.slice(0,4);
+      grid.innerHTML = visible.length ? visible.map(productCard).join('') : `<div class="empty-state"><h3>No finds just yet.</h3><p>Try a different word or explore the full edit. Your next favorite might be waiting there.</p><button class="button button-outline" data-reset>Show all finds ${icon('arrow')}</button></div>`;
+      document.querySelectorAll('[data-category]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === state.category)));
+      const more = document.getElementById('load-more');
+      more.hidden = filtered.length <= 4;
+      more.innerHTML = state.expanded ? `Show the highlights ${icon('arrow')}` : `Discover all ${filtered.length} finds ${icon('arrow')}`;
+      document.getElementById('results-count').textContent = filtered.length ? `Showing ${visible.length} of ${filtered.length} thoughtful find${filtered.length === 1 ? '' : 's'}. Current prices on Amazon.` : 'No products match this selection.';
+      document.getElementById('search-context').hidden = !state.query;
+      document.getElementById('search-context-label').textContent = `Search results for "${state.query}"`;
+      bindTilt(grid);
+    }
+
+    function persistSaved() {
+      try { localStorage.setItem(storageKey, JSON.stringify([...saved])); storageAvailable = true; }
+      catch (_) { storageAvailable = false; }
+    }
+
+    function updateSavedUI() {
+      const count = document.getElementById('saved-count');
+      count.textContent = saved.size;
+      count.hidden = !saved.size;
+      document.getElementById('saved-trigger').setAttribute('aria-label', `Your saved finds, ${saved.size} ${saved.size === 1 ? 'item' : 'items'}`);
+      document.querySelectorAll('[data-save]').forEach(button => {
+        const product = products.find(item => item.id === button.dataset.save);
+        if (!product) return;
+        const isSaved = saved.has(product.id);
+        button.setAttribute('aria-pressed', String(isSaved));
+        button.setAttribute('aria-label', `${isSaved ? 'Remove' : 'Save'} ${product.name}${isSaved ? ' from' : ' to'} your finds`);
+      });
+      if (savedDialog.open) renderSaved();
+    }
+
+    function toggleSaved(id) {
+      if (!products.some(product => product.id === id)) return;
+      const wasSaved = saved.has(id);
+      if (wasSaved) saved.delete(id); else saved.add(id);
+      persistSaved();
+      updateSavedUI();
+      showToast(wasSaved ? 'Removed from your saved finds.' : storageAvailable ? 'A good find, saved for later.' : 'Saved for this visit. Browser storage is unavailable.');
+    }
+
+    function openDialog(dialog) {
+      let opener = document.activeElement;
+      if (opener && opener.closest('dialog')) opener = returnTo || document.getElementById('search-trigger');
+      document.querySelectorAll('dialog[open]').forEach(open => open.close());
+      returnTo = opener;
+      dialog.showModal();
+      document.body.classList.add('dialog-open');
+      syncSlideshow();
+    }
+
+    function openProduct(id) {
+      const product = products.find(item => item.id === id);
+      if (!product) return;
+      document.getElementById('product-dialog-content').innerHTML = `<div class="review-layout">
+        <div class="review-visual ${product.lifestyle ? 'lifestyle' : ''}"><img src="${product.image}" alt="${product.name}" width="600" height="600" data-product-image="${product.id}"></div>
+        <div class="review-copy"><p class="eyebrow">${product.category}</p><h2 id="review-title">${product.name}</h2><p class="review-intro">${product.overview}</p>
+          <dl class="review-specs">${product.specs.map(([label,value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl>
+          <h3 class="review-subheading">The thoughtful details</h3><ul class="review-features">${product.features.map(feature => `<li>${icon('check')}<span>${feature}</span></li>`).join('')}</ul>
+          <p class="review-consideration"><strong>Before you choose.</strong> ${product.consideration}</p>
+          ${product.linkNotice ? `<p class="link-notice">${product.linkNotice}</p>` : ''}
+          <div class="review-cta-row">${product.amazon ? `<a class="button button-primary" href="${product.amazon}" target="_blank" rel="sponsored nofollow noopener noreferrer">Check price on Amazon ${icon('external')}</a>` : `<a class="button button-primary" href="${product.source}" target="_blank" rel="noopener noreferrer">Read the original review ${icon('external')}</a>`}<button class="review-save" data-save="${product.id}" aria-label="Save ${product.name} to your finds" aria-pressed="${saved.has(product.id)}">${icon('heart')}</button></div>
+          <p class="dialog-feedback" role="status" aria-live="polite"></p>
+          <p class="review-disclosure">As an Amazon Associate, I earn from qualifying purchases, at no extra cost to you. Check the current price, exact model, and availability on Amazon.</p>
+          <a class="review-source" href="${product.source}" target="_blank" rel="noopener noreferrer">Source: the original Home Vibe Gadgets review ${icon('external')}</a>
+          <p class="review-disclosure">An editorial summary of the original article, not a new hands-on product test.</p>
+        </div></div>`;
+      openDialog(productDialog);
+      productDialog.scrollTop = 0;
+      updateSavedUI();
+    }
+
+    function renderSearch() {
+      const query = document.getElementById('search-input').value.trim();
+      const matches = products.filter(product => matchesSearch(product, query));
+      const list = query ? matches.slice(0,6) : products.slice(0,4);
+      document.getElementById('search-hint').textContent = query ? `${matches.length} thoughtful find${matches.length === 1 ? '' : 's'} match your search.` : 'A few favorites to get you started.';
+      document.getElementById('search-results').innerHTML = list.length ? list.map(product => `<button type="button" class="search-result" data-product="${product.id}"><img src="${product.image}" alt="" width="60" height="60" data-product-image="${product.id}"><span class="search-result-text"><strong>${product.name}</strong><span>${product.category}</span></span>${icon('arrow')}</button>`).join('') : '<p class="search-empty">Nothing quite matches yet. Try "rice", "induction", "basket", or a product brand.</p>';
+      document.getElementById('search-all').innerHTML = query ? `Show ${matches.length} result${matches.length === 1 ? '' : 's'} in the edit ${icon('arrow')}` : `Explore all 11 finds ${icon('arrow')}`;
+    }
+
+    function openSearch() {
+      document.getElementById('search-input').value = state.query;
+      renderSearch();
+      openDialog(searchDialog);
+      document.getElementById('search-input').focus();
+    }
+
+    function renderSaved() {
+      const list = products.filter(product => saved.has(product.id));
+      document.querySelector('.saved-intro').textContent = storageAvailable ? 'The things that caught your eye, all in one place. Saved on this browser, just for you.' : 'Your favorites for this visit. Browser storage is unavailable, so this collection will not persist after you leave.';
+      document.getElementById('saved-list').innerHTML = list.length ? list.map(product => `<article class="saved-item"><button data-product="${product.id}" aria-label="Read the ${product.name} review"><img src="${product.image}" alt="${product.name}" width="75" height="85" data-product-image="${product.id}"></button><div><h3>${product.name}</h3><button class="review-link" data-product="${product.id}">Take a closer look ${icon('arrow')}</button></div><button class="icon-button remove-saved" data-remove="${product.id}" aria-label="Remove ${product.name} from saved finds">${icon('close')}</button></article>`).join('') + '<button class="clear-saved" id="clear-saved">Clear my saved finds</button>' : `<div class="saved-empty">${icon('heart')}<h3>A little space for good finds.</h3><p>Tap the heart on anything that catches your eye. Your favorites will be waiting right here.</p><button class="button button-primary" data-browse="all">Explore the edit ${icon('arrow')}</button></div>`;
+    }
+
+    function openSaved() { document.getElementById('saved-feedback').textContent='';renderSaved();openDialog(savedDialog); }
+
+    function openArticle(key) {
+      const article = articles[key];
+      if (!article) return;
+      document.getElementById('article-eyebrow').textContent = article.eyebrow;
+      const content = document.getElementById('article-content');
+      content.innerHTML = '<h2 id="article-title"></h2>' + article.body;
+      document.getElementById('article-title').textContent = article.title;
+      openDialog(articleDialog);
+      articleDialog.scrollTop = 0;
+    }
+
+    function browseCategory(category, resetQuery = true) {
+      state.category = category;
+      if (resetQuery) state.query = '';
+      state.expanded = category !== 'all';
+      renderProducts();
+    }
+
+    function scrollToEdit() { document.getElementById('the-edit').scrollIntoView({behavior:reducedMotion.matches ? 'auto' : 'smooth',block:'start'}); }
+
+    // Product photos move in perspective, without moving their interactive hit areas.
+    function bindTilt(scope) {
+      if (reducedMotion.matches || !finePointer.matches) return;
+      scope.querySelectorAll('.product-media, .spotlight-art').forEach(surface => {
+        if (surface.dataset.tiltBound) return;
+        surface.dataset.tiltBound = 'true';
+        surface.addEventListener('pointermove', event => {
+          if (reducedMotion.matches) return;
+          const rect = surface.getBoundingClientRect();
+          surface.style.setProperty('--tilt-y', `${((event.clientX - rect.left) / rect.width - .5) * 13}deg`);
+          surface.style.setProperty('--tilt-x', `${-((event.clientY - rect.top) / rect.height - .5) * 10}deg`);
+        });
+        surface.addEventListener('pointerleave', () => {surface.style.setProperty('--tilt-x','0deg');surface.style.setProperty('--tilt-y','0deg');});
+      });
+    }
+
+    const slides = [...document.querySelectorAll('.hero-slide')];
+    let currentSlide = 0;
+    let slideshowPaused = reducedMotion.matches;
+    let slideshowTimer;
+    function showSlide(index) {
+      currentSlide = (index + slides.length) % slides.length;
+      slides.forEach((slide,i) => slide.classList.toggle('active', i === currentSlide));
+      document.querySelectorAll('[data-slide]').forEach((button,i) => button.setAttribute('aria-current',String(i === currentSlide)));
+      document.getElementById('slide-number').textContent = String(currentSlide + 1).padStart(2,'0');
+    }
+    function syncSlideshow() {
+      clearInterval(slideshowTimer);
+      if (!slideshowPaused && !document.hidden && !document.querySelector('dialog[open]')) slideshowTimer = setInterval(() => showSlide(currentSlide + 1), 10000);
+      const pause = document.getElementById('slide-pause');
+      pause.innerHTML = icon(slideshowPaused ? 'play' : 'pause');
+      pause.setAttribute('aria-label', slideshowPaused ? 'Play slideshow, images change every 10 seconds' : 'Pause slideshow');
+      pause.title = slideshowPaused ? 'Play slideshow' : 'Pause slideshow';
+    }
+    document.querySelectorAll('[data-slide]').forEach(button => button.addEventListener('click', () => {showSlide(Number(button.dataset.slide));syncSlideshow();}));
+    document.getElementById('slide-pause').addEventListener('click', () => {slideshowPaused = !slideshowPaused;syncSlideshow();});
+    document.getElementById('slide-previous').addEventListener('click', () => {showSlide(currentSlide - 1);syncSlideshow();});
+    document.getElementById('slide-next').addEventListener('click', () => {showSlide(currentSlide + 1);syncSlideshow();});
+    document.addEventListener('visibilitychange', syncSlideshow);
+    reducedMotion.addEventListener('change', () => {slideshowPaused = reducedMotion.matches;syncSlideshow();if (!reducedMotion.matches) bindTilt(document);});
+
+    const hero = document.querySelector('.hero');
+    hero.addEventListener('pointermove', event => {
+      if (reducedMotion.matches || !finePointer.matches) return;
+      const rect = hero.getBoundingClientRect();
+      hero.style.setProperty('--pan-x',`${((event.clientX - rect.left) / rect.width - .5) * -11}px`);
+      hero.style.setProperty('--pan-y',`${((event.clientY - rect.top) / rect.height - .5) * -7}px`);
+    });
+    hero.addEventListener('pointerleave', () => {hero.style.setProperty('--pan-x','0px');hero.style.setProperty('--pan-y','0px');});
+
+    document.addEventListener('click', event => {
+      const target = event.target.closest('button, a');
+      if (!target) return;
+      if (target.hasAttribute('data-save')) toggleSaved(target.dataset.save);
+      else if (target.hasAttribute('data-remove')) {
+        const list = document.getElementById('saved-list');
+        const index = [...list.querySelectorAll('[data-remove]')].indexOf(target);
+        toggleSaved(target.dataset.remove);
+        const remaining = list.querySelectorAll('[data-remove]');
+        if (remaining.length) remaining[Math.min(index,remaining.length - 1)].focus();
+        else savedDialog.querySelector('[data-browse]').focus();
+      }
+      else if (target.hasAttribute('data-product')) openProduct(target.dataset.product);
+      else if (target.hasAttribute('data-article')) openArticle(target.dataset.article);
+      else if (target.hasAttribute('data-close')) target.closest('dialog').close();
+      else if (target.hasAttribute('data-category')) browseCategory(target.dataset.category, false);
+      else if (target.hasAttribute('data-category-nav')) browseCategory(target.dataset.categoryNav);
+      else if (target.hasAttribute('data-browse')) {
+        document.querySelectorAll('dialog[open]').forEach(dialog => dialog.close());
+        browseCategory(target.dataset.browse);
+        scrollToEdit();
+        setTimeout(() => document.querySelector(`[data-category="${state.category}"]`).focus({preventScroll:true}), 50);
+      }
+      else if (target.hasAttribute('data-reset')) {browseCategory('all');document.querySelector('[data-category="all"]').focus({preventScroll:true});}
+      else if (target.id === 'clear-saved') {
+        saved.clear();persistSaved();updateSavedUI();showToast('Your collection is cleared. Room for new favorites.');
+        savedDialog.querySelector('[data-browse]').focus();
+      }
+    });
+
+    document.querySelectorAll('dialog').forEach(dialog => {
+      dialog.addEventListener('click', event => {
+        const rect = dialog.getBoundingClientRect();
+        if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+      });
+      dialog.addEventListener('close', () => {
+        if (!document.querySelector('dialog[open]')) {
+          document.body.classList.remove('dialog-open');
+          if (returnTo && returnTo.isConnected && !returnTo.closest('dialog')) returnTo.focus({preventScroll:true});
+        }
+        syncSlideshow();
+      });
+    });
+
+    document.getElementById('search-trigger').addEventListener('click',openSearch);
+    document.getElementById('saved-trigger').addEventListener('click',openSaved);
+    document.getElementById('footer-saved').addEventListener('click',openSaved);
+    document.getElementById('search-input').addEventListener('input',renderSearch);
+    document.getElementById('search-form').addEventListener('submit',event => {
+      event.preventDefault();
+      state.query = document.getElementById('search-input').value.trim();
+      state.category = 'all';state.expanded = true;
+      searchDialog.close();renderProducts();scrollToEdit();
+      setTimeout(() => document.querySelector('[data-category="all"]').focus({preventScroll:true}),50);
+    });
+    document.getElementById('clear-search').addEventListener('click', () => {state.query='';renderProducts();document.querySelector(`[data-category="${state.category}"]`).focus({preventScroll:true});});
+    document.getElementById('product-sort').addEventListener('change',event => {state.sort=event.target.value;renderProducts();});
+    document.getElementById('load-more').addEventListener('click', () => {
+      state.expanded = !state.expanded;
+      renderProducts();
+      if (!state.expanded) {
+        scrollToEdit();
+        document.querySelector(`[data-category="${state.category}"]`).focus({preventScroll:true});
+      }
+      else {
+        const next = grid.querySelectorAll('.product-title button')[4];
+        if (next) {
+          next.closest('.product-card').scrollIntoView({behavior:reducedMotion.matches ? 'auto' : 'smooth',block:'center'});
+          next.focus({preventScroll:true});
+        }
+      }
+    });
+    document.getElementById('view-all-top').addEventListener('click', () => {
+      state.category='all';state.query='';state.expanded=true;renderProducts();
+      grid.scrollIntoView({behavior:reducedMotion.matches ? 'auto' : 'smooth',block:'start'});
+      const first = grid.querySelector('.product-title button');
+      if (first) first.focus({preventScroll:true});
+    });
+
+    const mobileNav = document.getElementById('mobile-nav');
+    const menuToggle = document.getElementById('menu-toggle');
+    function closeMenu() {mobileNav.hidden=true;menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open navigation');menuToggle.innerHTML=icon('menu');}
+    menuToggle.addEventListener('click', () => {
+      const opening = mobileNav.hidden;
+      mobileNav.hidden=!opening;
+      menuToggle.setAttribute('aria-expanded',String(opening));
+      menuToggle.setAttribute('aria-label',opening ? 'Close navigation' : 'Open navigation');
+      menuToggle.innerHTML=icon(opening ? 'close' : 'menu');
+    });
+    mobileNav.addEventListener('click',event => {if(event.target.closest('a')) closeMenu();});
+    document.addEventListener('keydown',event => {if(event.key==='Escape' && !mobileNav.hidden){closeMenu();menuToggle.focus();}});
+    document.addEventListener('click',event => {if(!mobileNav.hidden && !event.target.closest('.site-header')) closeMenu();});
+    window.matchMedia('(min-width:701px)').addEventListener('change',event => {if(event.matches) closeMenu();});
+    window.addEventListener('storage',event => {
+      if (event.key !== storageKey && event.key !== null) return;
+      try {
+        const parsed = JSON.parse(event.newValue || '[]');
+        saved = new Set(Array.isArray(parsed) ? parsed.filter(id => products.some(product => product.id===id)) : []);
+        updateSavedUI();
+      } catch (_) { /* Ignore invalid saved data from another tab. */ }
+    });
+
+    // Preserve a useful image or a labeled fallback if an external source is unavailable.
+    document.addEventListener('error',event => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement)) return;
+      if (image.dataset.productImage) {
+        const product = products.find(item => item.id===image.dataset.productImage);
+        if (product && product.fallbackImage && !image.dataset.fallbackTried) {
+          image.dataset.fallbackTried='true';image.src=product.fallbackImage;return;
+        }
+        if (image.dataset.failed) return;
+        image.dataset.failed='true';
+        image.style.mixBlendMode='normal';
+        image.src='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><rect width="600" height="600" fill="#eeefe7"/><g fill="none" stroke="#8c967e" stroke-width="3"><path d="M226 260h148v108H226zM211 260h178M253 249h94M280 237h40M245 292h110"/><path d="M226 278h-22v36h22m148-36h22v36h-22"/></g><text x="300" y="420" text-anchor="middle" fill="#68745c" font-family="Arial" font-size="18">See product in the original review</text></svg>');
+      } else if (image.classList.contains('hero-slide') && !image.dataset.failed) {
+        image.dataset.failed='true';image.removeAttribute('srcset');
+        image.src='https://images.pexels.com/photos/3847514/pexels-photo-3847514.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200';
+      }
+    },true);
+
+    renderProducts();
+    updateSavedUI();
+    syncSlideshow();
+    bindTilt(document);
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    if ('IntersectionObserver' in window && !reducedMotion.matches) {
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {if(entry.isIntersecting){entry.target.classList.add('in-view');revealObserver.unobserve(entry.target);}});
+      },{threshold:.08});
+      document.querySelectorAll('.reveal').forEach(element => {element.classList.add('prepared');revealObserver.observe(element);});
+      const navObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          document.querySelectorAll('.desktop-nav a').forEach(link => link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id && !link.hasAttribute('data-category-nav')));
+        });
+      },{rootMargin:'-20% 0px -55% 0px',threshold:0});
+      ['the-edit','guides','our-story'].forEach(id => navObserver.observe(document.getElementById(id)));
+    }
+  </script>
+</body>
+</html>
